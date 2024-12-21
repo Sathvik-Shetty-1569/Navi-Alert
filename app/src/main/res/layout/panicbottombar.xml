@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg">
+
+    <TextView
+        android:id="@+id/textView_bottomsheet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Select one of the services below"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/LayoutPolice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewpolice"
+        android:src="@drawable/police_car_6_svgrepo_com" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="38dp"
+        android:text="Call Police : For Reporting a crime or urgent situation."
+        android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutAmbulance"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewambulance"
+            android:src="@drawable/ambulance_svgrepo_com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Call Ambulance: For urgent medical emergencies "
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutFireBrigade"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewfirebrigade"
+            android:src="@drawable/fire_station_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="38dp"
+            android:text="Call Fire Brigade: In cases of fires, gas leaks, or hazardous material situations"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

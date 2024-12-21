@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    tools:context=".HomeActivity">
+
+    <include
+        layout="@layout/activity_home_content">
+    </include>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/wp5134880">
+
+
+
+        <ImageView
+            android:id="@+id/drawerimage"
+            android:layout_width="39dp"
+            android:layout_height="46dp"
+            android:background="@android:color/transparent"
+            android:elevation="8dp"
+            android:padding="5dp"
+            android:src="@drawable/baseline_menu_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.091"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+        <Button
+            android:id="@+id/buttonPortal"
+            android:layout_width="271dp"
+            android:layout_height="67dp"
+            android:text="PORTAL SERVICE"
+            android:background="@drawable/button_border_teal"
+            android:textColor="#009688"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.314" />
+
+        <TextView
+            android:id="@+id/titlePortal2"
+            android:layout_width="265dp"
+            android:layout_height="70dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/text_border"
+            android:fontFamily="@font/fascinate"
+            android:text="NaviAlert"
+            android:textColor="#009688"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/buttonPortal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.324" />
+
+        <Button
+            android:id="@+id/buttonReportIncident"
+            android:layout_width="271dp"
+            android:layout_height="67dp"
+            android:elevation="10dp"
+            android:background="@drawable/button_border_teal"
+            android:text="Report Incident"
+            android:textColor="#009688"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <Button
+            android:id="@+id/buttonTrackingSystem"
+            android:layout_width="271dp"
+            android:layout_height="67dp"
+            android:background="@drawable/button_border_teal"
+            android:text="Find Police Station"
+            android:textColor="#009688"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.484" />
+
+        <Button
+            android:id="@+id/buttonPanic"
+            android:layout_width="271dp"
+            android:layout_height="67dp"
+            android:background="@drawable/button_border_teal"
+            android:text="Panic Portal"
+            android:textColor="#009688"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.665" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_items_xml" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

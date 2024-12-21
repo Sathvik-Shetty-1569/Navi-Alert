@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_description"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DescriptionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardGunThreat"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/_9sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_18sdp"
+                android:src="@drawable/robbery_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/cardTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:text="Theft or Burglary"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardFire"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/_9sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/editTextmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/sexual_harassment_teacher_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/card2TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:text="Harassment or Stalking"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBomb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/_9sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/editTextmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_18sdp"
+                android:src="@drawable/speaker_outline_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/card3TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:text="Public Disturbance"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardHazard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/_9sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/editTextmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="@dimen/_26sdp"
+                android:src="@drawable/traffic_cone_svgrepo_com" />
+
+            <TextView
+                android:id="@+id/card4TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:text="Traffic Violation"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_17sdp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWeather"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/_9sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/editTextmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:src="@drawable/missing_person" />
+
+            <TextView
+                android:id="@+id/card5TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_45sdp"
+                android:text="Missing Person"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18sdp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardOther"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_153sdp"
+
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="@dimen/_9sdp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@+id/editTextmessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:src="@drawable/baseline_question_mark_24" />
+
+            <TextView
+                android:id="@+id/card6TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:text="Other"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/viewtitle"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/wallpaper"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+
+            android:id="@+id/btnback"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            app:layout_constraintBottom_toTopOf="@+id/cardBomb"
+            app:layout_constraintEnd_toEndOf="@+id/viewtitle"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/titledescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add as much detail as possible."
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewtitle"
+            app:layout_constraintEnd_toEndOf="@+id/viewtitle"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/viewtitle"
+            app:layout_constraintTop_toTopOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.541" />
+
+        <EditText
+            android:id="@+id/editTextmessage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_265sdp"
+            android:layout_margin="@dimen/_9sdp"
+            android:background="@drawable/comment"
+            android:elevation="@dimen/_10sdp"
+            android:hint="Describe the incident in detail...."
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_230sdp"
+            android:textColor="@color/black"
+            android:textColorHint="#b2b6bd"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewtitle"
+            app:layout_constraintVertical_bias="0.783" />
+
+        <Button
+            android:id="@+id/buttonnext"
+            android:layout_width="1000dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/teal"
+            android:text="Comfirm"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextmessage"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <!-- Add other UI elements here as needed -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</FrameLayout>

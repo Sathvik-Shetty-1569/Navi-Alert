@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".PanicActivity">
+
+
+    <ImageView
+        android:id="@+id/imageviewbutton"
+        android:layout_width="@dimen/_299sdp"
+        android:layout_height="312dp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="218dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/off" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/wallpaper"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/titledescribe"
+        android:layout_width="187dp"
+        android:layout_height="44dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="171dp"
+        android:text="Edit Profile"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="521dp"
+        android:layout_marginEnd="65dp"
+        android:gravity="center"
+        android:text="Press and hold button"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <TextView
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="551dp"
+        android:layout_marginEnd="65dp"
+        android:gravity="center"
+        android:text="for 5 seconds"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="23dp"
+        android:layout_alignStart="@+id/imageviewbutton"
+        android:layout_alignTop="@+id/imageviewbutton"
+        android:layout_alignEnd="@+id/imageviewbutton"
+        android:layout_alignBottom="@+id/imageviewbutton"
+        android:layout_gravity="center"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="150dp"
+        android:gravity="center"
+        android:text="Panic Button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.541" />
+
+    <ImageView
+        android:id="@+id/btnback"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+</RelativeLayout>
